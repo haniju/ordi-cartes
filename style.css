@@ -1,0 +1,195 @@
+@media all and (min-width: 1280px) {
+  .carte:nth-child(even) {
+    opacity: 0.9 !important;
+  }
+  .carte:nth-child(1+3n) {
+    width: 34% !important;
+  }
+}
+@media all and (max-width: 1279px) and (min-width: 600px) {
+  .carte {
+    width: 50vw !important;
+    height: 50vw !important;
+  }
+  .carte:nth-child(1+3n) {
+    width: 34% !important;
+  }
+}
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .carte {
+    width: 100vw !important;
+    height: 100vw !important;
+  }
+  .carte:nth-child(even) {
+    opacity: 0.9 !important;
+  }
+  p {
+    font-size: 18px !important;
+  }
+  h1 {
+    font-size: 27px !important;
+  }
+  .carte-text {
+    padding: 15px !important;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Share+Tech+Mono|Source+Sans+Pro:300,400');
+
+body {
+    z-index: 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  margin: 7px;
+  font-family: 'Francois One', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  text-align: center;
+  margin: 7px;
+}
+.tableau {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.content {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: auto;
+}
+
+.foo-toc {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+  position: fixed;
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  width: auto;
+  height: 60px;
+  box-sizing: border-box;
+}
+.toc-button {
+    position: relative;
+    padding: 7px;
+    height: 100%;
+}
+.toc-button:hover .toc {
+  visibility: visible;
+}
+.footer h1, .toc h1 {
+  font-size: 16px;
+  text-align: left;
+}
+.toc {
+  visibility: hidden;
+  position: fixed;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  left: 0px;
+  background-color: white;
+  height: 100%;
+  width: 250px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-button {
+  padding: 7px;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: 33vw;
+  position: relative;
+}
+.carte-text {
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.carte:hover .carte-text {
+  visibility: visible;
+}
+
+.cible {
+  background-color: #34deff;
+  /*color: #1398b2;*/
+}
+.organes {
+  background-color: #ffa093;
+  /*color: #b26055;*/
+}
+.matieres_premieres {
+  background-color: #ceea00;
+  /*color: #8d9d10;*/
+}
+.debouches {
+  background-color: #fff217;
+  /*color : #b2aa22;*/
+}
+.effets {
+  background-color: #c592ff;
+  /*color: #8054b2;*/
+}
+
+img.box {
+    width: 70%;
+    height: auto;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  bottom: 0px;
+  z-index: 100;
+  position: fixed;
+  margin: auto;
+  background-color: var(--white);
+}
