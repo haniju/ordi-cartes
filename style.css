@@ -2,23 +2,23 @@
   .carte:nth-child(even) {
     opacity: 0.9 !important;
   }
-  .carte:nth-child(1+3n) {
+  .carte:nth-child(3n+0) {
     width: 34% !important;
   }
 }
 @media all and (max-width: 1279px) and (min-width: 600px) {
   .carte {
-    width: 50vw !important;
-    height: 50vw !important;
+    width: 50% !important;
+    height: 50% !important;
   }
-  .carte:nth-child(1+3n) {
-    width: 34% !important;
+  .carte:nth-child(3n+0) {
+    width: 34vw !important;
   }
 }
 @media all and (max-width: 599px) and (min-width: 50px) {
   .carte {
-    width: 100vw !important;
-    height: 100vw !important;
+    width: 100% !important;
+    height: 100% !important;
   }
   .carte:nth-child(even) {
     opacity: 0.9 !important;
@@ -59,7 +59,30 @@ p {
   font-size: 21px;
   text-align: center;
   margin: 7px;
+}/*
+.tableau {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
 }
+
+.content {
+  box-sizing: border-box;
+  height: 100%;
+  /*margin: auto;*
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}*/
+
 .tableau {
     z-index: 1;
     display: flex;
@@ -79,7 +102,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  overflow: auto;
+  overflow-x: visible;
+  overflow-y: scroll;
 }
 
 .foo-toc {
@@ -136,7 +160,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33vw;
+  width: 33%;
   height: 33vw;
   position: relative;
 }
