@@ -126,8 +126,8 @@ p {
     padding: 7px;
     height: 100%;
 }
-.hide-toc {
-
+#closeToc {
+  display: none;
 }
 .toc-button:hover .toc {
   visibility: visible !important;

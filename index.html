@@ -33,6 +33,24 @@
               div = document.getElementById('toc');
               div.style.display = "none";
           }
+
+          function showOpenToc() {
+              div = document.getElementById('openToc');
+              div.style.display = "flex";
+          }
+          function showCloseToc() {
+              div = document.getElementById('closeToc');
+              div.style.display = "flex";
+          }
+          function hideOpenToc() {
+              div = document.getElementById('openToc');
+              div.style.display = "none";
+          }
+          function hideCloseToc() {
+              div = document.getElementById('closeToc');
+              div.style.display = "none";
+          }
+
           function width() {
               div = document.getElementById('cartes');
               div.style.width = "80%";
@@ -75,7 +93,14 @@
     </div>
     <div class="foo-toc">
       <div class="footer">
-        <button onclick="javascript:showDiv(); javascript:width();" class="toc-button"><h1>=</h1></button>
+        <button onclick="javascript:showDiv(); javascript:width();
+        javascript:hideOpenToc(); javascript:showCloseToc();"
+        class="toc-button" id="openToc"><h1>=</h1></button>
+
+        <button onclick="javascript:hideDiv(); javascript:widthBack();
+        javascript:hideCloseToc(); javascript:showOpenToc();"
+        class="toc-button" id="closeToc"><h1>X</h1></button>
+
         <div class="footer-button">
           <a href="http://lesanimauxdufutur.net"><h1>Retour</h1></a>
         </div>
