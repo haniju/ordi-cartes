@@ -86,10 +86,7 @@ p {
 .tableau {
     z-index: 1;
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
     position: absolute;
     margin: auto;
     width: 100%;
@@ -112,6 +109,7 @@ p {
   height: 100%;
   position: fixed;
   box-sizing: border-box;
+  z-index: 10;
 }
 .footer {
   display: flex;
@@ -128,25 +126,27 @@ p {
     padding: 7px;
     height: 100%;
 }
+.hide-toc {
+
+}
 .toc-button:hover .toc {
-  visibility: visible;
+  visibility: visible !important;
 }
 .footer h1, .toc h1 {
   font-size: 16px;
   text-align: left;
 }
 .toc {
-  visibility: hidden;
-  position: fixed;
+  /*position: fixed;*/
   box-sizing: border-box;
   margin-bottom: 60px;
   padding-top: 60px;
   left: 0px;
   background-color: white;
   height: 100%;
-  width: 250px;
+  width: 20%;
   overflow: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;

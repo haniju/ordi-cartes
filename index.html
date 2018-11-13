@@ -24,12 +24,65 @@
   <meta property="og:description" content="Design de produit numerique" />
   <meta property="og:site_name" content="Haniju Design" />
   <meta property="og:image" content="images/blop.jpg" />
+  <script type="text/javascript">
+          function showDiv() {
+              div = document.getElementById('toc');
+              div.style.display = "flex";
+          }
+          function hideDiv() {
+              div = document.getElementById('toc');
+              div.style.display = "none";
+          }
+          function width() {
+              div = document.getElementById('cartes');
+              div.style.width = "80%";
+          }
+          function widthBack() {
+              div = document.getElementById('cartes');
+              div.style.width = "unset";
+          }
+  </script>
 </head>
 
 <body>
   <div class="tableau">
+    <div id="toc" class="toc">
+      <button onclick="javascript:hideDiv(); javascript:widthBack();" class="hide-toc">X</button>
+      <a href="#carte-01"><h1>1/ L'ordinateur</h1></a>
+      <a href="#carte-02"><h1>2/ Les smartphones</h1></a>
+      <a href="#carte-03"><h1>3/ La carte mère</h1></a>
+      <a href="#carte-04"><h1>4/ Le disque dur</h1></a>
+      <a href=""><h1>5/ La carte réseau</h1></a>
+      <a href=""><h1>6/ La mémoire flash</h1></a>
+      <a href=""><h1>Les terres rares</h1></a>
+      <a href=""><h1>L'electricité</h1></a>
+      <a href=""><h1>Le code binaire</h1></a>
+      <a href=""><h1>Les logiciels</h1></a>
+      <a href=""><h1>Les interfaces utilisateurs</h1></a>
+      <a href=""><h1>Pour les entreprises</h1></a>
+      <a href=""><h1>Pour la science</h1></a>
+      <a href=""><h1>Les réseaux</h1></a>
+      <a href=""><h1>Le temps d'utilisation</h1></a>
+      <a href=""><h1>Le poid économique</h1></a>
+      <a href=""><h1>L'obsolescence programmée</h1></a>
+      <a href=""><h1>Les monopoles</h1></a>
+      <a href=""><h1>Le poid économique</h1></a>
+      <a href=""><h1>L'obsolescence programmée</h1></a>
+      <a href=""><h1>Les monopoles</h1></a>
+      <a href=""><h1>Le poid économique</h1></a>
+      <a href=""><h1>L'obsolescence programmée</h1></a>
+      <a href=""><h1>Les monopoles</h1></a>
+    </div>
+    <div class="foo-toc">
+      <div class="footer">
+        <button onclick="javascript:showDiv(); javascript:width();" class="toc-button"><h1>=</h1></button>
+        <div class="footer-button">
+          <a href="http://lesanimauxdufutur.net"><h1>Retour</h1></a>
+        </div>
+      </div>
+    </div>
 
-    <div class="content">
+    <div class="content" id="cartes">
 
       <div class="carte">
         <h1>Bienvenue !</h1>
@@ -215,7 +268,10 @@
           </p>
         </div>
       </div>
-
+<!--
+      Les internautes
+      Ils sont presque 50% de la population mondiale en 2016, (contre 1% en 1995 !), mais inégalement réparties sur la planète. Au Senegal, 20% de la population est utilisatrice, contre 86% en France.
+-->
       <div class="carte effets">
         <img class="box" src="png/temps.png">
         <div class="carte-text effets">
@@ -266,40 +322,6 @@
         </div>
       </div>
 
-      <div class="foo-toc">
-        <div class="footer">
-          <button class="toc-button"><h1>=</h1></button>
-          <div class="footer-button">
-            <a href="http://lesanimauxdufutur.net"><h1>Retour</h1></a>
-          </div>
-        </div>
-        <div class="toc">
-          <a href="#carte-01"><h1>1/ L'ordinateur</h1></a>
-          <a href="#carte-02"><h1>2/ Les smartphones</h1></a>
-          <a href="#carte-03"><h1>3/ La carte mère</h1></a>
-          <a href="#carte-04"><h1>4/ Le disque dur</h1></a>
-          <a href=""><h1>5/ La carte réseau</h1></a>
-          <a href=""><h1>6/ La mémoire flash</h1></a>
-          <a href=""><h1>Les terres rares</h1></a>
-          <a href=""><h1>L'electricité</h1></a>
-          <a href=""><h1>Le code binaire</h1></a>
-          <a href=""><h1>Les logiciels</h1></a>
-          <a href=""><h1>Les interfaces utilisateurs</h1></a>
-          <a href=""><h1>Pour les entreprises</h1></a>
-          <a href=""><h1>Pour la science</h1></a>
-          <a href=""><h1>Les réseaux</h1></a>
-          <a href=""><h1>Le temps d'utilisation</h1></a>
-          <a href=""><h1>Le poid économique</h1></a>
-          <a href=""><h1>L'obsolescence programmée</h1></a>
-          <a href=""><h1>Les monopoles</h1></a>
-          <a href=""><h1>Le poid économique</h1></a>
-          <a href=""><h1>L'obsolescence programmée</h1></a>
-          <a href=""><h1>Les monopoles</h1></a>
-          <a href=""><h1>Le poid économique</h1></a>
-          <a href=""><h1>L'obsolescence programmée</h1></a>
-          <a href=""><h1>Les monopoles</h1></a>
-        </div>
-      </div>
     </div>
   </div>
 
