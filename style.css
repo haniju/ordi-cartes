@@ -53,35 +53,25 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
+h1.number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  opacity: 0.3;
+}
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 21px;
   text-align: center;
   margin: 7px;
-}/*
-.tableau {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    position: absolute;
-    margin: auto;
-    width: 100%;
-    height: 100%;
 }
-
-.content {
-  box-sizing: border-box;
-  height: 100%;
-  /*margin: auto;*
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}*/
+button {
+  background-color: unset;
+}
+button:hover {
+  background-color: grey;
+}
 
 .tableau {
     z-index: 1;
@@ -137,19 +127,18 @@ p {
   text-align: left;
 }
 .toc {
-  /*position: fixed;*/
   box-sizing: border-box;
-  margin-bottom: 60px;
-  padding-top: 60px;
   left: 0px;
-  background-color: white;
   height: 100%;
   width: 20%;
-  overflow: auto;
   display: none;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
+  padding-bottom: 60px;
+}
+.toc-inside {
+  overflow: auto;
 }
 .footer-button {
   padding: 7px;
