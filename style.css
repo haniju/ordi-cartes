@@ -58,6 +58,7 @@ h1.number {
   top: 5px;
   left: 5px;
   opacity: 0.3;
+  z-index: 10;
 }
 p {
   font-family: 'Source Sans Pro', sans-serif;
@@ -115,12 +116,11 @@ button {
     position: relative;
     padding: 7px;
     height: 100%;
-    background-color: black;
-    color: white;
+    color: black;
 }
 .toc-button:hover, .hide-toc:hover {
-  background-color: unset;
-  color: black;
+  background-color: black;
+  color: white;
 }
 .hide-toc {
   background-color: black;
