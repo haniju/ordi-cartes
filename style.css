@@ -1,4 +1,13 @@
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1600px) {
+  .carte:nth-child(3n+0) {
+    opacity: 0.9 !important;
+  }
+  .carte {
+    width: 25% !important;
+    height: 25vw !important;
+  }
+}
+@media all and (max-width: 1599px) and (min-width: 1280px) {
   .carte:nth-child(even) {
     opacity: 0.9 !important;
   }
@@ -114,13 +123,19 @@ button {
 }
 .toc-button {
     position: relative;
-    padding: 7px;
-    height: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
     color: black;
 }
 .toc-button:hover, .hide-toc:hover {
   background-color: black;
   color: white;
+}
+img.toc-picto {
+}
+.toc-button:hover img.toc-picto, .hide-toc:hover img.toc-picto {
+filter: invert(1);
 }
 .hide-toc {
   background-color: black;
@@ -192,24 +207,19 @@ button {
 }
 
 .cible {
-  background-color: #34deff;
-  /*color: #1398b2;*/
+  background-color: #4ab7ff;
 }
 .organes {
-  background-color: #ffa093;
-  /*color: #b26055;*/
+  background-color: #8c7bff;
 }
 .matieres_premieres {
-  background-color: #ceea00;
-  /*color: #8d9d10;*/
+  background-color: #fb7d82;
 }
 .debouches {
-  background-color: #fff217;
-  /*color : #b2aa22;*/
+  background-color: #ffa33c;
 }
 .effets {
-  background-color: #c592ff;
-  /*color: #8054b2;*/
+  background-color: #f8ea00;
 }
 
 img.box {
