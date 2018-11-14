@@ -68,10 +68,11 @@ p {
 }
 button {
   background-color: unset;
+  border: unset;
 }
-button:hover {
-  background-color: grey;
-}
+/*button:hover {
+  background-color: unset;
+}*/
 
 .tableau {
     z-index: 1;
@@ -106,7 +107,6 @@ button:hover {
   align-items: center;
   position: fixed;
   bottom: 0px;
-  background-color: white;
   width: auto;
   height: 60px;
   box-sizing: border-box;
@@ -115,6 +115,16 @@ button:hover {
     position: relative;
     padding: 7px;
     height: 100%;
+    background-color: black;
+    color: white;
+}
+.toc-button:hover, .hide-toc:hover {
+  background-color: unset;
+  color: black;
+}
+.hide-toc {
+  background-color: black;
+  color: white;
 }
 #closeToc {
   display: none;
@@ -136,6 +146,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 60px;
+  position: relative;
 }
 .toc-inside {
   overflow: auto;
@@ -153,6 +164,16 @@ button:hover {
   height: 33vw;
   position: relative;
 }
+
+.carte:target {
+  animation: highlight 1.5s ease;
+}
+@keyframes highlight {
+  0% { background-color: none; }
+  50% { background-color: white; opacity: 0.8; }
+  100% { background-color: none; }
+}
+
 .carte-text {
   visibility: hidden;
   position: absolute;
