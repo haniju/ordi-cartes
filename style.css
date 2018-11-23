@@ -20,9 +20,6 @@
     width: 50% !important;
     height: 50% !important;
   }
-  .carte:nth-child(3n+0) {
-    width: 34vw !important;
-  }
 }
 @media all and (max-width: 599px) and (min-width: 50px) {
   .carte {
@@ -40,6 +37,9 @@
   }
   .carte-text {
     padding: 15px !important;
+  }
+  .toc {
+    width: 50%;
   }
 }
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Share+Tech+Mono|Source+Sans+Pro:300,400');
