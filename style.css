@@ -24,7 +24,10 @@
 @media all and (max-width: 599px) and (min-width: 50px) {
   .carte {
     width: 100% !important;
-    height: 100% !important;
+    height: 75% !important;
+  }
+  img.box {
+    width: 90% !important;
   }
   .carte:nth-child(even) {
     opacity: 0.9 !important;
@@ -35,11 +38,14 @@
   h1 {
     font-size: 27px !important;
   }
+  .toc h1 {
+    font-size: 15px !important;
+  }
   .carte-text {
     padding: 15px !important;
   }
   .toc {
-    width: 50%;
+    width: 50% !important;
   }
 }
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Share+Tech+Mono|Source+Sans+Pro:300,400');
