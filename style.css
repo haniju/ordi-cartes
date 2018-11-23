@@ -205,6 +205,9 @@ filter: invert(1);
 .carte:hover .carte-text {
   visibility: visible;
 }
+.carte:hover h1.number {
+  opacity: 1;
+}
 
 .cible {
   background-color: #4ab7ff;
