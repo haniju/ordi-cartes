@@ -2,7 +2,7 @@
   .carte:nth-child(3n+0) {
     opacity: 0.9 !important;
   }
-  .carte {
+  .carte, .intro {
     width: 25% !important;
     height: 25vw !important;
   }
@@ -16,13 +16,13 @@
   }
 }
 @media all and (max-width: 1110px) and (min-width: 600px) {
-  .carte {
+  .carte, .intro {
     width: 50% !important;
     height: 50% !important;
   }
 }
 @media all and (max-width: 599px) and (min-width: 50px) {
-  .carte {
+  .carte, .intro {
     width: 100% !important;
     height: 75% !important;
   }
@@ -176,7 +176,7 @@ filter: invert(1);
   padding: 7px;
 }
 
-.carte {
+.carte, .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
