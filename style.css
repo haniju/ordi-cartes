@@ -7,7 +7,7 @@
     height: 25vw !important;
   }
 }
-@media all and (max-width: 1599px) and (min-width: 1280px) {
+@media all and (max-width: 1599px) and (min-width: 1111px) {
   .carte:nth-child(even) {
     opacity: 0.9 !important;
   }
@@ -15,7 +15,7 @@
     width: 34% !important;
   }
 }
-@media all and (max-width: 1279px) and (min-width: 600px) {
+@media all and (max-width: 1110px) and (min-width: 600px) {
   .carte {
     width: 50% !important;
     height: 50% !important;
