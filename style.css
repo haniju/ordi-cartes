@@ -122,7 +122,7 @@ button {
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   width: auto;
   height: 60px;
   box-sizing: border-box;
@@ -166,7 +166,7 @@ filter: invert(1);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-bottom: 60px;
+  padding-top: 60px;
   position: relative;
 }
 .toc-inside {
