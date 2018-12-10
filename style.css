@@ -168,6 +168,8 @@ filter: invert(1);
   align-items: flex-start;
   padding-top: 60px;
   position: relative;
+  z-index: 10;
+  box-shadow: 2px 0px 2px #0006;
 }
 .toc-inside {
   overflow: auto;
@@ -218,17 +220,42 @@ filter: invert(1);
 .cible {
   background-color: #4ab7ff;
 }
+.famA {
+  color: #4ab7ff;
+  font-family: inherit;
+  font-size: inherit;
+}
 .organes {
   background-color: #8c7bff;
+}
+.famB {
+  color: #8c7bff;
+  font-family: inherit;
+  font-size: inherit;
 }
 .matieres_premieres {
   background-color: #fb7d82;
 }
+.famC {
+  color: #fb7d82;
+  font-family: inherit;
+  font-size: inherit;
+}
 .debouches {
   background-color: #ffa33c;
 }
+.famD {
+  color: #ffa33c;
+  font-family: inherit;
+  font-size: inherit;
+}
 .effets {
   background-color: #f8ea00;
+}
+.famE {
+  color: #f5d805;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 img.box {
