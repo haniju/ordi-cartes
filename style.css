@@ -86,6 +86,12 @@ button {
   background-color: unset;
   border: unset;
 }
+.intro a {
+  border-bottom: 1px solid black;
+}
+.intro a:hover {
+  border-bottom: 10px solid black;
+}
 /*button:hover {
   background-color: unset;
 }*/
