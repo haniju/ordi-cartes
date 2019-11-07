@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie-lte7" dir="ltr"> <![endif]-->
+<!--[if lte IE 9]> <html class="ie-lte9" dir="ltr"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr">             <!--<![endif]-->
+<html>
+
+<head>
+  <title>L'ordinateur</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/fav.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Share+Tech+Mono|Francois+One|Source+Sans+Pro:300,400" rel="stylesheet">
+
+
+  <meta name="description" content="template de scroll horizontal">
+  <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="www.haniju.fr" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="exp" />
+  <meta property="og:description" content="Design de produit numerique" />
+  <meta property="og:site_name" content="Haniju Design" />
+  <meta property="og:image" content="images/blop.jpg" />
+  <script type="text/javascript">
+          function showDiv() {
+              div = document.getElementById('toc');
+              div.style.display = "flex";
+          }
+          function hideDiv() {
+              div = document.getElementById('toc');
+              div.style.display = "none";
+          }
+
+          function showOpenToc() {
+              div = document.getElementById('openToc');
+              div.style.display = "flex";
+          }
+          function showCloseToc() {
+              div = document.getElementById('closeToc');
+              div.style.display = "flex";
+          }
+          function hideOpenToc() {
+              div = document.getElementById('openToc');
+              div.style.display = "none";
+          }
+          function hideCloseToc() {
+              div = document.getElementById('closeToc');
+              div.style.display = "none";
+          }
+
+          function width() {
+              div = document.getElementById('cartes');
+              div.style.width = "80%";
+          }
+          function widthBack() {
+              div = document.getElementById('cartes');
+              div.style.width = "unset";
+          }
+  </script>
+</head>
+
+<body>
+  <div class="tableau">
+    <div id="toc" class="toc">
+      <!--button onclick="javascript:hideDiv(); javascript:widthBack();"
+      class="hide-toc" style="position:absolute; top:7px; right:7px;"><h1>X</h1></button-->
+      <div class="toc-inside">
+        <a href="#carte-01" class="famA"><h1>1/ L'ordinateur</h1></a>
+        <a href="#carte-02" class="famA"><h1>2/ Les smartphones</h1></a>
+        <a href="#carte-03" class="famB"><h1>3/ La carte mère</h1></a>
+        <a href="#carte-04" class="famB"><h1>4/ Le disque dur</h1></a>
+        <a href="#carte-05" class="famB"><h1>5/ La carte réseau</h1></a>
+        <a href="#carte-06" class="famB"><h1>6/ La mémoire flash</h1></a>
+        <a href="#carte-07" class="famC"><h1>7/ Les terres rares</h1></a>
+        <a href="#carte-08" class="famC"><h1>8/ L'electricité</h1></a>
+        <a href="#carte-09" class="famC"><h1>9/ Le code binaire</h1></a>
+        <a href="#carte-10" class="famC"><h1>10/ Les logiciels</h1></a>
+        <a href="#carte-11" class="famC"><h1>11/ Les interfaces utilisateurs</h1></a>
+        <a href="#carte-12" class="famD"><h1>12/ Pour les entreprises</h1></a>
+        <a href="#carte-13" class="famD"><h1>13/ Pour la science</h1></a>
+        <a href="#carte-14" class="famD"><h1>14/ Les réseaux</h1></a>
+        <a href="#carte-15" class="famE"><h1>15/ Le temps d'utilisation</h1></a>
+        <a href="#carte-16" class="famE"><h1>16/ Le poid économique</h1></a>
+        <a href="#carte-17" class="famE"><h1>17/ L'obsolescence programmée</h1></a>
+        <a href="#carte-18" class="famE"><h1>18/ Les monopoles</h1></a>
+      </div>
+    </div>
+    <div class="foo-toc">
+      <div class="footer">
+        <button onclick="javascript:showDiv(); javascript:width();
+        javascript:hideOpenToc(); javascript:showCloseToc();"
+        class="toc-button" id="openToc"><img class="toc-picto" src="png/toc_black.png"></button>
+
+        <button onclick="javascript:hideDiv(); javascript:widthBack();
+        javascript:hideCloseToc(); javascript:showOpenToc();"
+        class="toc-button" id="closeToc"><img class="toc-picto" src="png/toc_black.png"></button>
+      </div>
+    </div>
+
+    <div class="content" id="cartes">
+
+      <div class="carte main niv0" id="carte-01">
+        <h1 class="number">1</h1>
+        <img class="box" src="png/ordinateur.png">
+        <div class="carte-text cible">
+          <h1>L'ordinateur</h1>
+          <p>C’est une machine programmable qui réalise des calculs
+            (addition, soustraction, multiplication, division) et mémorise
+            des informations bien mieux que les humains. Depuis le milieu
+            du 19e siècle, on en aurait produit plus de 3 milliards alors
+            que nous sommes 7 milliard d’humains sur Terre.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>

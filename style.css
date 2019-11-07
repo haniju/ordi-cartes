@@ -1,3 +1,5 @@
+@import "animation.css";
+
 @media all and (min-width: 1600px) {
   .carte:nth-child(3n+0) {
     opacity: 0.9 !important;
@@ -12,7 +14,7 @@
     opacity: 0.9 !important;
   }
   .carte:nth-child(3n+0) {
-    width: 34% !important;
+    width: 50% !important;
   }
 }
 @media all and (max-width: 1110px) and (min-width: 600px) {
@@ -24,7 +26,7 @@
 @media all and (max-width: 599px) and (min-width: 50px) {
   .carte, .intro {
     width: 100% !important;
-    height: 75% !important;
+    height: 50% !important;
   }
   img.box {
     width: 90% !important;
@@ -49,6 +51,9 @@
   }
 }
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Share+Tech+Mono|Source+Sans+Pro:300,400');
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     z-index: 0;
@@ -59,14 +64,27 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+a:hover {
+  background-color: grey;
 }
 h1 {
   font-size: 30px;
   margin: 7px;
   font-family: 'Francois One', monospace;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   text-align: center;
+}
+.toc-inside h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: none;
+  margin: 0px;
 }
 h1.number {
   position: absolute;
@@ -74,6 +92,14 @@ h1.number {
   left: 5px;
   opacity: 0.3;
   z-index: 10;
+}
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 7px 7px 2px 7px;
+  text-transform: uppercase;
+  text-align: left;
 }
 p {
   font-family: 'Source Sans Pro', sans-serif;
@@ -95,16 +121,25 @@ button {
 /*button:hover {
   background-color: unset;
 }*/
-
+.niv0 {
+  cursor: url('zoom-01.png'), row-resize;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main {
+  width: 77vh !important;
+  height: 77vh !important;
+}
 .tableau {
-    z-index: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 .content {
   box-sizing: border-box;
@@ -160,7 +195,7 @@ filter: invert(1);
   visibility: visible !important;
 }
 .footer h1, .toc h1 {
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
 }
 .toc {
@@ -179,6 +214,7 @@ filter: invert(1);
 }
 .toc-inside {
   overflow: auto;
+  width: 100%;
 }
 .footer-button {
   padding: 7px;
@@ -189,13 +225,13 @@ filter: invert(1);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33%;
-  height: 33vw;
+  width: 50%;
+  height: 60vh;
   position: relative;
 }
 
 .carte:target {
-  animation: highlight 1.5s ease;
+  animation: highlight 2.5s ease;
 }
 @keyframes highlight {
   0% { background-color: none; }
@@ -204,7 +240,7 @@ filter: invert(1);
 }
 
 .carte-text {
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   background-color: white;
   width: 100%;
@@ -216,8 +252,11 @@ filter: invert(1);
   box-sizing: border-box;
   padding: 30px;
 }
-.carte:hover .carte-text {
-  visibility: visible;
+.carte-text img {
+  width: 30%;
+}
+.carte:hover {
+  cursor: zoom-in;
 }
 .carte:hover h1.number {
   opacity: 1;
@@ -228,40 +267,30 @@ filter: invert(1);
 }
 .famA {
   color: #4ab7ff;
-  font-family: inherit;
-  font-size: inherit;
 }
 .organes {
   background-color: #8c7bff;
 }
 .famB {
   color: #8c7bff;
-  font-family: inherit;
-  font-size: inherit;
 }
 .matieres_premieres {
   background-color: #fb7d82;
 }
 .famC {
   color: #fb7d82;
-  font-family: inherit;
-  font-size: inherit;
 }
 .debouches {
   background-color: #ffa33c;
 }
 .famD {
   color: #ffa33c;
-  font-family: inherit;
-  font-size: inherit;
 }
 .effets {
   background-color: #f8ea00;
 }
 .famE {
   color: #f5d805;
-  font-family: inherit;
-  font-size: inherit;
 }
 
 img.box {
